@@ -33,6 +33,18 @@ jQuery(document).ready(function () {
     // Seleccionar todos los inputs
     var filtros = jQuery('#filtros_chart input');
     var resultados = '';
+    if (window.innerWidth > 800 ){
+        var windoewHeight = window.innerHeight;
+        var navegationHeiht = jQuery('#mnprincipal').height();
+        var chartheaderHeiht = jQuery('#chart-header').height();
+        var chartHeight = 0;
+        chartHeight = windoewHeight - (100 +  navegationHeiht + chartheaderHeiht )
+        console.log(window.innerHeight)
+        console.log(chartHeight)
+        jQuery('.show-box').css('min-height', chartHeight)
+        jQuery('#char_placeholder').css('min-height', chartHeight)
+    }
+
 
     /**
      * Verifica si en el formulario camibia algun valor para luego hacer el AJAX
@@ -72,7 +84,6 @@ jQuery(document).ready(function () {
             reloadChart(resultados);
             jQuery('#char_placeholder').show()
             activateFilters(filtros);
-            console.log(window.innerWidth)
             if (window.innerWidth < 800){
                 $('html,body').animate({
                     scrollTop: $("#char_placeholder").offset().top

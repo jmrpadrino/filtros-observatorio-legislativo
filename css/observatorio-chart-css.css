@@ -249,8 +249,11 @@ a:not(.collapsed) .rotate-icon {
     padding: 5%;
     padding-top: 0;
 }
+.chart-header {
+    margin-bottom: 36px;
+}
 .show-box{
-    min-height: 480px;
+    min-height: 360px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -258,7 +261,7 @@ a:not(.collapsed) .rotate-icon {
 
 .chart-placeholder {
     width: 100%;
-    min-height: 420px;
+    min-height: 300px;
 }
 
 .chart-placeholder.chart-hidden {
