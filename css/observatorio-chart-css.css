@@ -115,6 +115,53 @@ body {
     width: 100%;
 }
 
+.text-yellow {
+    color: #FFB600;
+}
+
+.list-inline {
+    list-style: none;
+    padding: 0;
+    margin: 18px 0;
+}
+.list-inline li {
+    padding-right: 0!important;
+}
+
+.list-inline span,
+.list-inline i {
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    line-height: 1;
+}
+.list-inline span {
+    background-color: #494949;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+.list-inline i { 
+    background-color: #575757;
+}
+.list-inline li:hover span {
+    background-color: #2e2e2e;
+}
+
+.circle-bordered-text {
+    border-radius: 50px;
+    border: 3px solid #494949;
+    padding: 1% 5%;
+    display: table;
+    margin: 0 auto;
+    line-height: 1;
+    font-weight: 900;
+    margin-bottom: 36px;
+}
+.filter-cifras-container {
+    margin-top: 36px;
+    margin-bottom: 36px;
+}
+
 /* Collapsible */
 .panel-body ul {
     list-style: none;
@@ -147,6 +194,11 @@ a:not(.collapsed) .rotate-icon {
     background-color: #494949;
     color: white;
     border-radius: 0;
+}
+
+.filter-cifras .panel-default.panel-yellow .panel-heading {
+    background-color: #FFB600;
+    color: white;
 }
 
 .filter-cifras .panel-heading a:hover,
