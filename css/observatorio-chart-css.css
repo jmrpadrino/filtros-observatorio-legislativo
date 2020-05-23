@@ -258,7 +258,7 @@ a:not(.collapsed) .rotate-icon {
 
 .chart-placeholder {
     width: 100%;
-    min-height: 600px;
+    min-height: 420px;
 }
 
 .chart-placeholder.chart-hidden {
